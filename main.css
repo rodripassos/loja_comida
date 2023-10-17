@@ -1,0 +1,150 @@
+* {
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container-block {
+    display: block;
+}
+
+header, footer {
+    padding: 16px 0;
+    background-color: rgb(244, 170, 59);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+a { 
+    color: inherit;
+}
+
+header nav {
+    width: 40%;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 16px;
+}
+
+header nav ul li {
+    padding-right: 16px;
+}
+
+#sobre-a-loja {
+    padding-top: 48px;
+}
+
+#sobre-a-loja h2 {
+    margin-bottom: 1px solid black;
+}
+
+#sobre-a-loja img {
+    margin-right: 16px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    margin-top: 48px;
+    border-bottom: 1px solid black;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+button {
+    width: 95%;
+    padding: 8px 0;
+    border: none;
+    background-color: #dd8e06;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 48px;
+}
+
+footer {
+    border-top: 2px solid black;
+}
+
+@media screen and (max-width: 640px){
+
+    .container {
+        max-width: 90%;
+        display: block;
+    } 
+
+    header {
+        display: block;
+        
+    }
+
+    header nav {
+        padding: 0 16px;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    #sobre-a-loja,
+    #sobre-a-loja img,
+    #produtos,
+    #produtos img,
+    button {
+    width: 100%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px)  {
+    
+    .container {
+        max-width: 90%;
+        display: block;
+    } 
+
+    header nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+   
+   
+    .produtos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-size: 0.9em;
+    }
+
+    #produtos img,
+    button {
+        width: 95%;
+    }
+
+
+    #sobre-a-loja,
+    #sobre-a-loja img,
+    #produtos {
+    width: 100%;
+    }
+    
+}
+
